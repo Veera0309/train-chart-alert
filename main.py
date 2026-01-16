@@ -59,7 +59,7 @@ def format_vacant_coaches(vacant_coaches):
 
 def main():
     train_numbers = [12602, 16231]
-    journey_date = "2026-01-16"
+    journey_date = "2026-01-17"
     boarding_station_code = "ED"
     receiver_phone_number = ["+918667380449","+916381799681"]
 
@@ -89,7 +89,7 @@ def main():
                 ]
 
                 message = (
-                    f"*Alert!*\n\n"
+                    f"*Alert!* Sent from Railway\n\n"
                     f"Chart Prepared for Train {train_number}\n\n"
                     f"{format_vacant_coaches(vacant_coaches) if vacant_coaches else 'No vacant berths available'}"
                 )
